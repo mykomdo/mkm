@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">		
 	</head>
 	<body>    
-		<div class="container-fluid">      
+		<div class="container-fluid">      			
 			<form>											
 				<h3>Apartamento</h3>
 				<div class="form-row">
@@ -28,7 +28,7 @@
 						<label for="inputTipoMorador" class="col-form-label">Tipo Morador</label>
 						<select class="form-control form-control-sm" id="inputTipoMorador">
 						  <option>Proprietário</option>
-						  <option>Alugado</option>
+						  <option>Inquilino</option>
 						</select>
 					</div>					
 				</div>
@@ -58,18 +58,18 @@
 					  <label for="inputTelefone" class="col-form-label">Telefone</label>
 					  <input type="text" class="form-control form-control-sm" id="inputTelefone" placeholder="Telefone">
 					</div>			
-					<div class="form-group col-md-1">										
-						<button type="submit" class="btn btn-dark">Salvar</button>	
-					</div>					
+					<div class="form-group col-md-1 align-self-end">				
+						<button type="submit" class="btn btn-dark btn-block btn-sm">Salvar</button>	
+					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-8">				
+					<div class="form-group col-md-9">				
 						<table class="table table-hover table-sm">
 						  <thead class="thead-inverse">
 							<tr>
 							  <th>#</th>
 							  <th>Nome</th>
-							  <th>Rg</th>
+							  <th class="hidden-lg-down visible">Rg</th>
 							  <th>Cpf</th>
 							  <th>E-mail</th>
 							  <th>Celular</th>
@@ -80,44 +80,14 @@
 						  <tbody>
 							<tr>
 							  <th scope="row">1</th>
-							  <td>Gabriel Augusto Magaton</td>
-							  <td>41.374.717-7</td>
+							  <td>Gabriel Augusto Magaton</td>							  
+							  <td class="hidden-lg-down visible">41.374.717-7</td>
 							  <td>342.343.638-71</td>
 							  <td>gmagaton@gmail.com</td>
 							  <td>11-99396-0085</td>
 							  <td>11-3459-5286</td>				  
 							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  
-							</tr>
-							<tr>
-							  <th scope="row">2</th>
-							  <td>Gabriel Augusto Magaton</td>
-							  <td>41.374.717-7</td>
-							  <td>342.343.638-71</td>
-							  <td>gmagaton@gmail.com</td>
-							  <td>11-99396-0085</td>
-							  <td>11-3459-5286</td>
-							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  		  							  
-							</tr>		
-							<tr>
-							  <th scope="row">3</th>
-							  <td>Gabriel Augusto Magaton</td>
-							  <td>41.374.717-7</td>
-							  <td>342.343.638-71</td>
-							  <td>gmagaton@gmail.com</td>
-							  <td>11-99396-0085</td>
-							  <td>11-3459-5286</td>	
-							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  		  							  
-							</tr>		
-							<tr>
-							  <th scope="row">4</th>
-							  <td>Gabriel Augusto Magaton</td>
-							  <td>41.374.717-7</td>
-							  <td>342.343.638-71</td>
-							  <td>gmagaton@gmail.com</td>
-							  <td>11-99396-0085</td>
-							  <td>11-3459-5286</td>	
-							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  		  							  
-							</tr>									
+							</tr>															
 						  </tbody>
 						</table>
 					</div>
@@ -155,12 +125,12 @@
 					  <label for="inputPlaca" class="col-form-label">Placa</label>
 					  <input type="text" class="form-control form-control-sm" id="inputPlaca" placeholder="Placa">
 					</div>				
-					<div class="form-group col-md-1">				
-						<button type="submit" class="btn btn-dark">Salvar</button>	
+					<div class="form-group col-md-1 align-self-end">				
+						<button type="submit" class="btn btn-dark btn-block btn-sm">Salvar</button>	
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-5">				
+					<div class="form-group col-md-6">				
 						<table class="table table-hover table-sm">
 						  <thead class="thead-inverse">
 							<tr>
