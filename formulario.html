@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">		
+	</head>
+	<body>    
+		<div class="container-fluid">      			
+			<form>											
+				<h3>Apartamento</h3>
+				<div class="form-row">
+					<div class="form-group col-md-1">
+						<label for="inputApNr" class="col-form-label">Número</label>
+						<input type="text" class="form-control form-control-sm" id="inputApNr" placeholder="Número">
+					</div>
+					<div class="form-group col-md-1">
+						<label for="inputTorre" class="col-form-label">Torre</label>
+						<select class="form-control form-control-sm" id="inputTorre">
+						  <option>Torre A</option>
+						  <option>Torre B</option>
+						</select>
+					</div>
+					<div class="form-group col-md-1">
+						<label for="inputTipoMorador" class="col-form-label">Tipo Morador</label>
+						<select class="form-control form-control-sm" id="inputTipoMorador">
+						  <option>Proprietário</option>
+						  <option>Inquilino</option>
+						</select>
+					</div>					
+				</div>
+				<h3>Moradores</h3>
+				<div class="form-row">
+					<div class="form-group col-md-2">
+						<label for="inputNome" class="col-form-label">Nome</label>
+						<input type="text" class="form-control form-control-sm" id="inputNome" placeholder="Nome">
+					</div>
+					<div class="form-group col-md-1">
+					  <label for="inputRg" class="col-form-label">Rg</label>
+					  <input type="text" class="form-control form-control-sm" id="inputRg" placeholder="Rg">
+					</div>
+					<div class="form-group col-md-1">
+					  <label for="inputCpf" class="col-form-label">Cpf</label>
+					  <input type="text" class="form-control form-control-sm" id="inputCpf" placeholder="Cpf">
+					</div>					  		  
+					<div class="form-group col-md-2">
+					  <label for="inputEmail" class="col-form-label">E-mail</label>
+					  <input type="text" class="form-control form-control-sm" id="inputEmail" placeholder="E-mail">
+					</div>
+					<div class="form-group col-md-1">
+					  <label for="inputCelular" class="col-form-label">Celular</label>
+					  <input type="text" class="form-control form-control-sm" id="inputCelular"placeholder="Celular">
+					</div>
+					<div class="form-group col-md-1">
+					  <label for="inputTelefone" class="col-form-label">Telefone</label>
+					  <input type="text" class="form-control form-control-sm" id="inputTelefone" placeholder="Telefone">
+					</div>			
+					<div class="form-group col-md-1 align-self-end">				
+						<button type="submit" class="btn btn-dark btn-block btn-sm">Salvar</button>	
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-9">				
+						<table class="table table-hover table-sm">
+						  <thead class="thead-inverse">
+							<tr>
+							  <th>#</th>
+							  <th>Nome</th>
+							  <th class="hidden-lg-down visible">Rg</th>
+							  <th>Cpf</th>
+							  <th>E-mail</th>
+							  <th>Celular</th>
+							  <th>Telefone</th>
+							  <th>Ação</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>Gabriel Augusto Magaton</td>							  
+							  <td class="hidden-lg-down visible">41.374.717-7</td>
+							  <td>342.343.638-71</td>
+							  <td>gmagaton@gmail.com</td>
+							  <td>11-99396-0085</td>
+							  <td>11-3459-5286</td>				  
+							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  
+							</tr>															
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			  
+				<h3>Veículos</h3>
+				<div class="form-row">
+					<div class="form-group col-md-1">
+						<label for="inputTipoVeiculo" class="col-form-label">Tipo de Veículo</label>
+						<select class="form-control form-control-sm" id="inputTipoVeiculo">
+						  <option>Moto</option>
+						  <option>Carro</option>
+						</select>
+					</div>
+					<div class="form-group col-md-1">			
+					  <label for="inputMarca" class="col-form-label">Marca</label>
+					  <input type="text" class="form-control form-control-sm" id="inputMarca" placeholder="Marca">
+					</div>
+					<div class="form-group col-md-1">			
+					  <label for="inputModelo" class="col-form-label">Modelo</label>
+					  <input type="text" class="form-control form-control-sm" id="inputModelo" placeholder="Modelo">
+					</div>			
+					<div class="form-group col-md-1">
+						<label for="inputCorVeiculo" class="col-form-label">Cor</label>
+						<select class="form-control form-control-sm" id="inputCorVeiculo">
+						  <option>Branco</option>
+						  <option>Preto</option>
+						  <option>Prata</option>
+						  <option>Cinza</option>
+						  <option>Vermelho</option>
+						  <option>Azul</option>
+						</select>
+					</div>
+					<div class="form-group col-md-1">			
+					  <label for="inputPlaca" class="col-form-label">Placa</label>
+					  <input type="text" class="form-control form-control-sm" id="inputPlaca" placeholder="Placa">
+					</div>				
+					<div class="form-group col-md-1 align-self-end">				
+						<button type="submit" class="btn btn-dark btn-block btn-sm">Salvar</button>	
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">				
+						<table class="table table-hover table-sm">
+						  <thead class="thead-inverse">
+							<tr>
+							  <th>#</th>
+							  <th>Tipo</th>
+							  <th>Marca</th>
+							  <th>Modelo</th>
+							  <th>Cor</th>
+							  <th>Placa</th>							  
+							  <th>Ação</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>Moto</td>
+							  <td>BMW</td>
+							  <td>F800R</td>
+							  <td>Azul</td>
+							  <td>XXX-9999</td>							  
+							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  
+							</tr>
+							<tr>
+							  <th scope="row">2</th>
+							  <td>Moto</td>
+							  <td>BMW</td>
+							  <td>F800R</td>
+							  <td>Azul</td>
+							  <td>XXX-9999</td>							  
+							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  			  
+							</tr>
+							<tr>
+							  <th scope="row">3</th>
+							  <td>Moto</td>
+							  <td>BMW</td>
+							  <td>F800R</td>
+							  <td>Azul</td>
+							  <td>XXX-9999</td>							  
+							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  		  
+							</tr>
+							<tr>
+							  <th scope="row">4</th>
+							  <td>Moto</td>
+							  <td>BMW</td>
+							  <td>F800R</td>
+							  <td>Azul</td>
+							  <td>XXX-9999</td>							  
+							  <td><a href="">Editar</a> / <a href="">Remover</a></td>				  		  
+							</tr>							
+						  </tbody>
+						</table>
+					</div>							
+				</div>		  
+			</form>
+		  
+		</div>
+	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

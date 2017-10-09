@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">		
-	</head>
-	<body>    
-		<div class="container-fluid">  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/offcanvas/offcanvas.css" rel="stylesheet">
+	<style type="text/css">
+	   body { background: #EBEBEB !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+	</style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Grand Club Jardim Botânico</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lista_apartamento.html">Apartamentos</a>
+          </li>          
+		  <li class="nav-item active">
+            <a class="nav-link" href="apartamento.html">Apartamento</a>
+          </li>  
+        </ul>        
+      </div>
+    </nav>
+
+    <div class="container"> 
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+		  <li class="breadcrumb-item"><a href="menu_apartamento.html" class="text-dark">Apartamento</a></li>		  
+		  <li class="breadcrumb-item"><a href="lista_veiculo.html" class="text-dark">Veículos</a></li>		  
+		  <li class="breadcrumb-item active">Veículo</li>		
+		</ol>	
 			<div class="row justify-content-center">
 				<h3>Apartamento</h3>
 			</div>
@@ -30,7 +63,7 @@
 			<div class="row justify-content-center">
 				<h3>Veículo</h3>
 			</div>	
-			<div class="form-group col-md-1">
+			<div class="form-group">
 				<label for="inputTipoVeiculo" class="col-form-label">Tipo de Veículo</label>
 				<select class="form-control form-control-sm" id="inputTipoVeiculo">
 				  <option>Selecione</option>
